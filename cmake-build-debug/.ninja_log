@@ -1,0 +1,11 @@
+# ninja log v5
+0	803	7491581328524636	CMakeFiles/University_assignment_3_27.dir/main.cpp.obj	d382c950f1bdd645
+705	998	7491612811670430	problem1.exe	67482397a936d671
+588	790	7491622492645288	problem3.exe	cd4c674830b41a02
+808	965	7491581329885906	University_assignment_3_27.exe	491c4701dc2fbc38
+8	704	7491612810392351	CMakeFiles/problem1.dir/problem1.cpp.obj	7499f7222e22d169
+3	727	7491615812120335	CMakeFiles/problem2.dir/problem2.cpp.obj	5ea1ec4d40db6e1c
+727	941	7491615813547760	problem2.exe	2903937fa207c498
+0	587	7491622491320342	CMakeFiles/problem3.dir/problem3.cpp.obj	a53417fecccced2a
+5	636	7491628719400714	CMakeFiles/problem4.dir/problem4.cpp.obj	43efc1c6ed727a86
+637	783	7491628720648520	problem4.exe	e41da1f5653f525f
