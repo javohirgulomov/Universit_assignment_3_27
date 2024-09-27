@@ -2,13 +2,22 @@
 using namespace std;
 
 int main() {
-    int N;
-    cin >> N;
+    int t; // Number of test cases
+    cin >> t;
 
-    while (N > 0) {
-        cout << N % 10 << " ";
-        N /= 10;
+    while (t--) {
+        int N;
+        cin >> N;
+
+        // Process the digits of the number from right to left
+        while (N > 0) {
+            cout << N % 10; // Print the last digit
+            N /= 10; // Remove the last digit
+            if (N > 0) {
+                cout << " "; // Print space after each digit except the last one
+            }
+        }
+
+        cout << endl; // Move to the next line after each test case
     }
-
-    cout << endl;
 }
