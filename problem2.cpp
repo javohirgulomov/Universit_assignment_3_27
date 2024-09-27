@@ -2,22 +2,26 @@
 using namespace std;
 
 int main() {
-    int t; // Number of test cases
-    cin >> t;
 
-    while (t--) {
-        int N;
-        cin >> N;
+    int N;
+    cin >> N;
 
-        // Process the digits of the number from right to left
-        while (N > 0) {
-            cout << N % 10; // Print the last digit
-            N /= 10; // Remove the last digit
-            if (N > 0) {
-                cout << " "; // Print space after each digit except the last one
-            }
-        }
-
-        cout << endl; // Move to the next line after each test case
+    // Special case for handling 0, as reversing it still gives 0
+    if (N == 0) {
+        cout << "0" << endl;
+        return 0;
     }
+
+    // Extract digits from the integer N and store them in reverse order
+    bool first = true;
+    while (N > 0) {
+        if (!first) {
+            cout << " "; // Print space before printing next digit
+        }
+        cout << N % 10;  // Print the last digit
+        N /= 10;         // Remove the last digit
+        first = false;
+    }
+    cout << endl;
+
 }
